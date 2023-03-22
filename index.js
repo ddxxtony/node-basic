@@ -5,9 +5,14 @@ const app = express();
 const PORT = 5000;
 
 app.get("/", (req, res) => {
-	res.json({ message: "Hello World "});
+	res.json({ message: "Hello World get"});
 	console.log(JSON.stringify(req.headers));
 	
+})
+app.post('/', (req, res) => {
+	res.json({ message: "Hello World Post"});
+	console.log(JSON.stringify(req.body));
+	console.log(JSON.stringify(req.headers));
 })
 
 app.get("/health-check", (req, res) => {
