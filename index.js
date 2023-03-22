@@ -6,14 +6,14 @@ const PORT = 5000;
 
 app.get("/", (req, res) => {
 	res.json({ message: "Hello World get"});
-	console.log('Headers ->  '+JSON.stringify(req.body));
-	console.log('Body -->   '+JSON.stringify(req.headers));
+	console.log(' Body -->  '+JSON.stringify(req.body));
+	console.log('Headers ->  '+JSON.stringify(req.headers));
 	
 })
 app.post('/', (req, res) => {
 	res.json({ message: "Hello World Post"});
-	console.log('Headers ->  '+JSON.stringify(req.body));
-	console.log('Body -->   '+JSON.stringify(req.headers));
+	console.log(' Body -->  '+JSON.stringify(req.body));
+	console.log('Headers ->  '+JSON.stringify(req.headers));
 })
 
 app.get("/health-check", (req, res) => {
