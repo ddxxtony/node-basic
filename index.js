@@ -11,8 +11,8 @@ app.get("/", (req, res) => {
 })
 app.post('/', (req, res) => {
 	res.json({ message: "Hello World Post"});
-	console.log(JSON.stringify(req.body));
-	console.log(JSON.stringify(req.headers));
+	console.log('Headers ->  '+JSON.stringify(req.body));
+	console.log('Body -->   '+JSON.stringify(req.headers));
 })
 
 app.get("/health-check", (req, res) => {
