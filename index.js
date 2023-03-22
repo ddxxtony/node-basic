@@ -5,12 +5,12 @@ const app = express();
 const PORT = 5000;
 
 app.get("/", (req, res) => {
-	res.json({ message: "Hello World "+JSON.stringify(req)  });
+	res.json({ message: "Hello World "});
 	
 })
 
 app.get("/health-check", (req, res) => {
-	res.json({ message: "Server up and running"+ JSON.stringify(req)    });
+	res.json({ message: "Server up and running"  });
 })
 
 app.listen(PORT, () => {
